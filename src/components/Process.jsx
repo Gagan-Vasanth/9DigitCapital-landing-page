@@ -35,7 +35,7 @@ const ProcessStep = ({ cardDetails, index, children }) => {
     }, [cardDetails.step]);
   
     return (
-        <div className='relative'>
+        <div className='relative processStepContainer'>
             <div id={`step-${cardDetails.step}`}
                 className={`processStep`}>
             <div className="flex flex-row items-center justify-between mt-1 mb-4">

@@ -29,18 +29,18 @@ const Disclosure = () => {
                     We receive commission from Asset Management Companies for investments made under our ARN. The commission receivable is subject to and as per the guidelines laid down by SEBI and the Asset Management Companies. The commissions payable to us for the different schemes of various mutual funds, as required to be disclosed under clause 4(d) of the SEBI Circular No. SEBI/IMD/CIR No. 4/168230 dated June 30, 2009 is provided hereinbelow
                 </div>
             </CardWrapper>
-            <CardWrapper>
+            <CardWrapper className='overflow-card'>
                 <div className='disclosure-table'>
-                    <h3 className='disclosure-heading'>Fund Category</h3>
-                    <h3 className='disclosure-heading'>Trail commission per annum</h3>
-                    <div className='green-active'><h4>Equity Oriented Schemes</h4><p>(Includes Arbitrage Funds, ELSS Funds, Index Funds, Thematic Funds, all Equity Funds and Equity oriented Hybrid Funds)</p></div>
-                    <div className='white-active center'>0.15% to 1.45%</div>
-                    <div className='white-active'><h4>Debt Oriented Schemes</h4><p>(all debt schemes including Overnight, Liquid Funds)</p></div>
-                    <div className='green-active center'>0.05% to 1.00%</div>
-                    <div className='green-active'><h4>EGold ETF Funds</h4></div>
-                    <div className='white-active center'>0.20% to 1.45%</div>
-                    <div className='white-active'><h4>International Funds</h4><p>(Index, Fund of Funds)</p></div>
-                    <div className='green-active center'>0.40% - 1.00%</div>
+                    <h3 className='disclosure-heading big-row'>Fund Category</h3>
+                    <h3 className='disclosure-heading small-row'>Trail commission per annum</h3>
+                    <div className='green-active big-row'><h4>Equity Oriented Schemes</h4><p>(Includes Arbitrage Funds, ELSS Funds, Index Funds, Thematic Funds, all Equity Funds and Equity oriented Hybrid Funds)</p></div>
+                    <div className='white-active center small-row'>0.15% to 1.45%</div>
+                    <div className='white-active big-row'><h4>Debt Oriented Schemes</h4><p>(all debt schemes including Overnight, Liquid Funds)</p></div>
+                    <div className='green-active center small-row'>0.05% to 1.00%</div>
+                    <div className='green-active big-row'><h4>EGold ETF Funds</h4></div>
+                    <div className='white-active center small-row'>0.20% to 1.45%</div>
+                    <div className='white-active big-row'><h4>International Funds</h4><p>(Index, Fund of Funds)</p></div>
+                    <div className='green-active center small-row'>0.40% - 1.00%</div>
                 </div>
             </CardWrapper>
           </div>

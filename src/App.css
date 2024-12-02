@@ -33,7 +33,6 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: rgba(36, 130, 50, 0.5); */
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   z-index: 2;
@@ -46,7 +45,7 @@ html {
   justify-content: center;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url('./assets/9digitHomeBackground.png');
   background-size: cover;
   background-position: center;
@@ -119,7 +118,6 @@ html {
   font-weight: 500;
   color: #fff;
   font-size: 46px;
-
 }
 
 .home-header-green {
@@ -151,6 +149,7 @@ html {
   color: #248232;
   font-size: 48px;
   font-family: 'Averia Serif Libre';
+  text-align: center;
 }
 
 .service-desc-heading {
@@ -347,7 +346,6 @@ html {
   font-family: 'Averia Serif Libre';
   font-size: 24px;
   font-weight: 700;
-  text-align: center;
 }
 
 .entireProcess {
@@ -412,6 +410,7 @@ html {
   font-size: 20px;
   font-family: 'Averia Serif Libre';
   font-weight: 700;
+  text-align: center;
 }
 
 .active {
@@ -604,6 +603,18 @@ html {
   display: none;
 }
 
+.big-row {
+  min-width: 400px;
+}
+
+.small-row {
+  min-width: 200px;
+}
+
+.overflow-card {
+  overflow-x: auto;
+}
+
 @media screen and (max-width: 1094px) {
   .missionVisionContainer {
     gap: 24px;
@@ -688,5 +699,59 @@ html {
 }
 
 @media screen and (max-width: 620px) {
+  .home-header {
+    text-align: center;
+    scale: 0.9;
+  }
   
+  .home-header-green {
+    text-align: center;
+    scale: 0.9;
+  }
+
+  .home-description {
+    scale: 0.9;
+  }
+
+  .processStep {
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .entireProcess {
+    row-gap: 78px;
+    margin-bottom: 72px;
+  }
+
+  .contactUsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    padding: 2% 2%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .visionContainer {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+
+  .visionContent {
+    scale: 0.9;
+  }
+
+  .visionIcon img {
+    scale: 0.9;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
 }
