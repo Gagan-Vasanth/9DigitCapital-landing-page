@@ -1,0 +1,55 @@
+.bar {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.bar .middle {
+    height: 4px;
+    width: 30px;
+    background: #fff;
+    border-radius: 25px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.bar .top {
+    top: 10px;
+    height: 4px;
+    width: 30px;
+    background: #fff;
+    border-radius: 25px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.bar .bottom {
+    bottom: 6px;
+    height: 4px;
+    width: 30px;
+    background: #fff;
+    border-radius: 25px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.bar-close .top {
+    transform: rotate(-45deg);
+    width: 30px;
+    transform-origin: right;
+    top: -10px;
+}
+
+.bar-close .bottom {
+    transform: rotate(45deg);
+    width: 30px;
+    transform-origin: right;
+    top: 12px;
+}
+
+.bar-close .middle {
+    transform: translateX(20px);
+    opacity: 0;
+}

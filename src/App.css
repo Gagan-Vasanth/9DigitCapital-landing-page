@@ -165,7 +165,7 @@ html {
 .service-desc {
   margin: 2px 0px;
   font-size: 20px;
-  max-width: 40%;
+  max-width: 90%;
   text-align: center;
   color: #111011;
 }
@@ -251,6 +251,7 @@ html {
   justify-content: center;
   margin-top:12%;
   margin-left: 2%;
+  min-height: 100%;
 }
 
 .vision-icon-img {
@@ -305,6 +306,7 @@ html {
   transform: translateX(15%);
   top: 12%;
   background-color: #fff;
+  flex: 1;
 }
 
 .whatWeDo-right {
@@ -313,6 +315,7 @@ html {
   border-radius: 20px;
   box-shadow: #9cdb74ad 0.361312px 0.361312px 0.459876px -1.16667px;
   padding: 55px 38px;
+  margin-bottom: 24px;
 }
 
 .points b {
@@ -589,4 +592,101 @@ html {
   width: 500px;
   max-width: 90%;
   position: relative;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1094px) {
+  .missionVisionContainer {
+    gap: 24px;
+    column-gap: 42px;
+  }
+
+  .visionContainer {
+    min-width: 420px;
+    max-width: 420px;
+  }
+
+  .whatWeDoContainer {
+    flex-direction: column;
+  }
+  .whatWeDo-right {
+    margin-top: 24px;
+  }
+
+  .whatWeDo-left{
+    margin-bottom: 0px;
+  }
+
+  .whatWeDo-left img{
+    display: none;
+  }
+
+  .whatWeDo-header {
+    position: relative;
+    right: 0;
+    transform: translateX(0);
+    top: 0;
+  }
+
+  .contactUsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    padding: 2% 2%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1578px) {
+  .whatWeDo-left img{
+    scale: 0.8;
+    margin-left: -8%;
+  }
+
+  .whatWeDo-header {
+    scale: 0.8;
+    top: 12%;
+    right: 4%;
+  }
+
+  .whatWeDo-right {
+    scale: 0.95;
+  }
+
+  .helper-item {
+    margin-left: 0;
+  }
+} 
+
+@media screen and (max-width: 1040px) {
+  .entireProcess {
+    grid-template-columns: 1fr;
+  }
+
+  .home-description {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .nav-group, .contact-us-button{
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  
 }

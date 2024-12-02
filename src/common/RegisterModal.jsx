@@ -80,7 +80,6 @@ const RegisterModal = ({ setShowRegisterModal }) => {
             )
             .then(
                 (response) => {
-                    setShowRegisterModal(false);
                     setEmailSent(true);
                 },
                 (err) => {
@@ -116,7 +115,7 @@ const RegisterModal = ({ setShowRegisterModal }) => {
                     <input type="text" placeholder='Enter your city/pincode' onChange={(e) => setFormData({ ...formData, city: e.target.value})} value={formData.city}/>
                     <FaMapMarkerAlt className='input-icon' />
                 </div>
-                <div className={enableRegisterNowButton ? `register-now-enabled` : 'register-now'} onClick={() => sendEmail()}>
+                <div className={enableRegisterNowButton ? `register-now-enabled` : 'register-now'} onClick={() => showLoader ? true: sendEmail()}>
                     {showLoader ? <Loader /> : 'Submit' }
                 </div>
                 <img src={CloseButton} width={'24px'} height={'24px'} className='close-button' onClick={() => setShowRegisterModal(false)} />

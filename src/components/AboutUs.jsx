@@ -28,7 +28,7 @@ const AboutUs = () => {
             </div>
         </CardWrapper>
         <CardWrapper>
-            <div className='flex flex-row items-center justify-center gap-24 flex-wrap mt-6 mb-6'>
+            <div className='flex flex-row items-center justify-center gap-24 flex-wrap mt-6 mb-6 missionVisionContainer'>
                 <MissionAndVission heading={'Mission'} description={'To be the leading catalyst for financial empowerment, simplifying mutual fund investments and fostering prosperity for everyone'} icon={<img src={Mission} className='vision-icon-img'/>}/>
                 <MissionAndVission heading={'Vision'} description={'Empowering clients with transparent mutual fund services, committed to integrity, financial education, ensuring long-term financial success.'} icon={<img src={Vision} className='vision-icon-img'/>}/>
             </div>

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/9digitLogo.png';
 import { navBarItems } from '../navBarItem';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
+import Hamburger from './Hamburger';
+import SideNav from './SideNav';
 
 const Header = () => {
+  const [sideNavOpen, setSideNavOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -33,7 +37,7 @@ const Header = () => {
   return (
     <section className='headerContainer' style={{ backgroundColor: location.pathname === '/' ? '' : 'rgba(36, 130, 50, 0.7)'}}>
         <img src={Logo} width={'60px'} height={'60px'}/>
-        <div className='flex flex-row gap-6'>
+        <div className='nav-group'>
           {navBarItems.map((item) => (
             <span className='nav-item' onClick={() => navItemOnClickAction(item.id)}>{item.title}</span>
           ))}
@@ -41,6 +45,10 @@ const Header = () => {
         <div className='contact-us-button' onClick={handleWhatsAppClick}>
           Connect
         </div>
+        <div className='hamburger-icon' onClick={() => {}}>
+          <Hamburger setSideNavOpen={setSideNavOpen} sideNavOpen={sideNavOpen} />
+        </div>
+        <SideNav sideNavOpen={sideNavOpen} setSideNavOpen={setSideNavOpen} />
     </section>
   )
 }
