@@ -38,7 +38,7 @@ const EmailSent = () => {
 }
 
 const RegisterModal = ({ setShowRegisterModal }) => {
-    const [emailSent, setEmailSent] = useState(true);
+    const [emailSent, setEmailSent] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -84,11 +84,11 @@ const RegisterModal = ({ setShowRegisterModal }) => {
                     setEmailSent(true);
                 },
                 (err) => {
-                    setEmailSent(false);
                     setEmailError('Something went wrong in sending the email, Please retry again!')
                 }
             ).finally(() => {
                 setShowLoader(false);
+                setTimeout(() => {setEmailSent(true)}, 5000) 
             });
     }
 
