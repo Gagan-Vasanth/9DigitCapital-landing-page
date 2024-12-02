@@ -1,0 +1,163 @@
+.register-modal-left {
+    padding: 12px;
+    display: grid;
+    grid-gap: 8px 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "user-name user-name" "user-email user-email" "user-phone user-phone" "city city" "register-now register-now" "emailError emailError";
+}
+
+.register-modal-left label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-name {
+    grid-area: user-name;
+}
+
+.user-email {
+    grid-area: user-email;
+}
+
+.user-phone {
+    grid-area: user-phone;
+}
+
+.university {
+    grid-area: university;
+}
+
+.pass-out {
+    grid-area: pass-out;
+}
+
+.stream {
+    grid-area: stream;
+}
+
+.city {
+    grid-area: city;
+}
+
+.courses-interested {
+    grid-area: courses-interested;
+    position: relative;
+}
+
+.query {
+    grid-area: query;
+}
+
+.register-now {
+    grid-area: register-now;
+    padding: 16px;
+    text-align: center;
+    color: #B0B7C3;
+    border-radius: 10px;
+    background: #f7f7f7;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.register-modal-left input {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #9cdb74ad;
+    display: block;
+    width: 100%;
+    padding-right: 40px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.mandatory label::after {
+    content: ' *';
+    color: red;
+}
+
+.register-now-enabled {
+    grid-area: register-now;
+    padding: 16px;
+    text-align: center;
+    color: #B0B7C3;
+    border-radius: 10px;
+    background: #9cdb74ad;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 12px;
+    max-height: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-error {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: red;
+    font-weight: 500;
+    width: 100%;
+    grid-area: emailError;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 65%;
+    transform: translateY(-65%);
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    color: #9cdb74ad; /* Default color, adjust as needed */
+    pointer-events: none; /* Prevents the icon from interfering with input clicks */
+}
+
+.user-name, .user-email, .user-phone, .city {
+    position: relative; /* Needed for absolute positioning of icons */
+}
+
+.corporate-office-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.office-address, .office-timings {
+    display: flex;
+    align-items: flex-start;
+    margin: 5px 0;
+}
+
+.address-icon, .clock-icon {
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+@media screen and (max-width: 570px) {
+    .register-modal-left {
+        grid-template-areas: "user-name user-name" "user-email user-email" "user-phone user-phone" "city city" "register-now register-now" "emailError emailError";
+        max-height: 570px;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
