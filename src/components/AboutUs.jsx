@@ -43,7 +43,6 @@ const AboutUs = () => {
                 <div>
                     <p>At <span className='company-name'>9digit Capital</span>, an AMFI-registered mutual fund distributor, we offer:</p>
                     <p className='points'><b><span>.</span> Expert Investment Options:</b> Backed by rigorous research and analysis.</p>
-                    <p className='points'><b><span>.</span> Bangalore Headquarters: </b>Leveraging cutting-edge technology in India's financial hub.</p>
                     <p className='points'><b><span>.</span> Fresh Perspectives: </b>Established in 2023, we bring innovative solutions to investing.</p>
                     <p className='points'><b><span>.</span> Tailored Guidance: </b>Helping clients create personalized financial visions.</p>
                     <p className='points'><b><span>.</span> Diverse Opportunities:</b> Access to mutual funds, fixed deposits, bonds, and more.</p>

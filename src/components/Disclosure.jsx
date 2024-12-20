@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CardWrapper from '../common/CardWrapper';
+import AMFIRegistrationImage from '../assets/AMFIRegistration.jpeg'
 
 const Disclosure = () => {
   const [activeTab, setActiveTab] = useState('commission');
@@ -50,13 +51,13 @@ const Disclosure = () => {
                 <h2 className='service-header'>AMFI Certification</h2>
                 <div className='disclosure-content'>
                     Ara Financial Services Pvt Ltd. is registered with Association of Mutual Funds in India (AMFI) as a Mutual Fund Distributor since 29th September, 2009.
-                    <div><b>AMFI Registration Number (ARN):</b> ARN - 76035</div>
-                    <div><b>Date of Initial Registration:</b> 29-Sept-2009</div>
+                    <div><b>AMFI Registration Number (ARN):</b> ARN - 280833</div>
+                    <div><b>Date of Initial Registration:</b> 23-Nov-2023</div>
                     <div><b>Current Validity of ARN:</b> 11-Sept-2026</div>
                 </div>
             </CardWrapper>
             <CardWrapper>
-
+              <img src={AMFIRegistrationImage} width={'70%'} height={'70%'}/>
             </CardWrapper>
           </div>
         )}

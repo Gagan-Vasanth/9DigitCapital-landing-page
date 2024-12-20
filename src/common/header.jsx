@@ -35,15 +35,19 @@ const Header = () => {
   };
  
   return (
-    <section className='headerContainer' style={{ backgroundColor: location.pathname === '/' ? '' : 'rgba(36, 130, 50, 0.7)'}}>
-        <img src={Logo} width={'60px'} height={'60px'}/>
+    <section className='headerContainer' style={{ backgroundColor: location.pathname === '/' ? '' : 'rgba(193, 222, 175, 0.2)'}}>
+        <div className='headerImage'><img src={Logo} width={'200px'} height={'60px'}/>
+        <p>Where Growth <span>Meets Trust</span></p>
+        </div>
         <div className='nav-group'>
           {navBarItems.map((item) => (
-            <span className='nav-item' onClick={() => navItemOnClickAction(item.id)}>{item.title}</span>
+            <span className='nav-item' style={{ color: location.pathname === '/' ? '' : '#000'}}onClick={() => navItemOnClickAction(item.id)}>{item.title}</span>
           ))}
         </div>
-        <div className='contact-us-button' onClick={handleWhatsAppClick}>
-          Connect
+        <div className='flex flex-row items-center justify-center gap-12'><p style={{ color: '#09BE63', fontWeight: '700', fontSize: '20px'}}>ARN - 280833</p>
+          <div className='contact-us-button' onClick={handleWhatsAppClick}>
+            Connect
+          </div>
         </div>
         <div className='hamburger-icon' onClick={() => {}}>
           <Hamburger setSideNavOpen={setSideNavOpen} sideNavOpen={sideNavOpen} />

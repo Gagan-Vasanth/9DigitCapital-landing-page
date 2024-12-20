@@ -26,7 +26,7 @@ const ContactUs = () => {
 
     const handleWhatsAppClick = () => {
         const encodedMessage = encodeURIComponent("Hi Dikshitha, I would like to connect with you and have a discussion. Please let me know your free time to connect.");
-        const whatsappURL = `https://wa.me/917411637088?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/919740900109?text=${encodedMessage}`;
         window.open(whatsappURL, "_blank");
     };
 
@@ -34,7 +34,8 @@ const ContactUs = () => {
         <section id='contact-us'>
             <div className='contactUsContainer'>
                 <div>
-                    <img src={BannerIcon} width={'280px'} height={'80px'} />
+                <div className='headerImageFooter'><img src={BannerIcon} width={'200px'} height={'80px'} />
+                    <p>Where Growth <span>Meets Trust</span></p></div>
                     <div className='mt-2'>
                         <p className='company-text'>At 9Digit Capital, we are dedicated to helping our</p>
                         <p className='company-text'>clients achieve their financial goals and lead a </p>

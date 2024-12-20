@@ -63,7 +63,7 @@ const RegisterModal = ({ setShowRegisterModal }) => {
 
     const handleWhatsAppClick = () => {
         const encodedMessage = encodeURIComponent("Hi Dikshitha, I would like to connect with you and have a discussion. Please let me know your free time to connect.");
-        const whatsappURL = `https://wa.me/917411637088?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/919740900109?text=${encodedMessage}`;
         window.open(whatsappURL, "_blank");
     };
 

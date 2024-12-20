@@ -46,7 +46,8 @@ html {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   min-height: 100vh;
-  background-image: url('./assets/9digitHomeBackground.png');
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35) ),  url('./assets/9digitHomeBackground.png');
+  /* background-image:; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,9 +74,9 @@ html {
 
 .nav-item {
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1.2px;
   cursor: pointer;
   user-select: none;
@@ -106,8 +107,8 @@ html {
   padding:12px;
   padding-left:16px;
   padding-right: 16px;
-  background: #9CDB74;
-  color: #fff;
+  background: #53d700;
+  color: #000;
   font-weight: 700;
   border-radius: 24px;
   cursor: pointer;
@@ -123,7 +124,7 @@ html {
 .home-header-green {
   font-family: 'Averia Serif Libre';
   font-weight: 600;
-  color: #9CDB74;
+  color: #09BE63;
   font-size: 52px;
 }
 
@@ -552,14 +553,15 @@ html {
 
 .get-started-button {
   margin-top: 32px;
-  color: #fff;
+  color: #000;
   font-family:'Averia Serif Libre';
   border-radius: 12px;
-  padding: 12px 24px;
-  background-color: #9cdb74ad;
+  padding: 18px 36px;
+  background-color: #53d700;
   font-weight: 600;
   cursor: pointer;
   user-select: none;
+  font-size: 24px;
 }
 
 .modal-portal {
@@ -614,6 +616,51 @@ html {
 .overflow-card {
   overflow-x: auto;
 }
+
+.headerImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerImage p{
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: -6px;
+  user-select: none;
+}
+
+.headerImage p span{
+  font-size: 14px;
+  font-weight: 700;
+  color: #09BE63;
+}
+
+.headerImageFooter p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: -6px;
+  user-select: none;
+}
+
+.headerImageFooter p span{
+  font-size: 14px;
+  font-weight: 700;
+  color: #09BE63;
+}
+
+
+
+.slogan {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* .footer {
+  display: grid;
+  align-items: flex-start;
+} */
 
 @media screen and (max-width: 1094px) {
   .missionVisionContainer {
@@ -688,7 +735,7 @@ html {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1200px) {
   .nav-group, .contact-us-button{
     display: none;
   }
