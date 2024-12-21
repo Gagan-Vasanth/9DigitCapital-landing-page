@@ -52,8 +52,8 @@ const Disclosure = () => {
                 <div className='disclosure-content'>
                     Ara Financial Services Pvt Ltd. is registered with Association of Mutual Funds in India (AMFI) as a Mutual Fund Distributor since 29th September, 2009.
                     <div><b>AMFI Registration Number (ARN):</b> ARN - 280833</div>
-                    <div><b>Date of Initial Registration:</b> 23-Nov-2023</div>
-                    <div><b>Current Validity of ARN:</b> 11-Sept-2026</div>
+                    <div><b>Date of Initial Registration:</b> 21-Nov-2023</div>
+                    <div><b>Current Validity of ARN:</b> 24-Aug-2027</div>
                 </div>
             </CardWrapper>
             <CardWrapper>
