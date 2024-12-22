@@ -30,7 +30,7 @@ const Header = () => {
 
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent("Hi Dikshitha, I would like to connect with you and have a discussion. Please let me know your free time to connect.");
-    const whatsappURL = `https://wa.me/917411637088?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/919740900109?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
   };
  
@@ -44,7 +44,7 @@ const Header = () => {
             <span className='nav-item' style={{ color: location.pathname === '/' ? '' : '#000'}}onClick={() => navItemOnClickAction(item.id)}>{item.title}</span>
           ))}
         </div>
-        <div className='flex flex-row items-center justify-center gap-12'><p style={{ color: '#09BE63', fontWeight: '700', fontSize: '20px'}}>ARN - 280833</p>
+        <div className='flex flex-row items-center justify-center gap-12'>
           <div className='contact-us-button' onClick={handleWhatsAppClick}>
             Connect
           </div>

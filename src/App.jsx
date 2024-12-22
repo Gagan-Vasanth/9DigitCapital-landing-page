@@ -7,6 +7,7 @@ import Home from './components/Home';
 import OurServices from './components/OurServices';
 import Process from './components/Process';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Testimonials from './components/Testimonials';
 
 function App() {
   
@@ -18,7 +19,10 @@ function App() {
           <Route path="/" element={<> <Home />
             <OurServices />
             <AboutUs />
-            <Process /><ContactUs /></>} />
+            <Process />
+            <Testimonials />
+            <ContactUs />
+            </>} />
            
           <Route path="/disclosure"
             element={<Disclosure />} />

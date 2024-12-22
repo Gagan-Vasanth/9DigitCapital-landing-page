@@ -507,6 +507,8 @@ html {
   grid-gap: 32px;
   padding: 2% 2%;
   box-shadow: #9cdb74ad 0.361312px 0.361312px 0.459876px -1.16667px;
+  border-top: 1px solid #9cdb74ad;
+  margin-top: 52px;
 }
 
 .company-text {
@@ -704,6 +706,89 @@ html {
   }
 }
 
+.testimonialsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.reviewCard {
+  min-width: 100vw;
+  margin: 5vw;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review {
+  position: relative;
+  font-style: italic;
+  padding: 20px;
+  max-width: 90%;
+  line-height: 1.6;
+  font-size: 1.2em;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review::before,
+.review::after {
+  content: '"';
+  font-size: 4em;
+  color: #ccc;
+  position: absolute;
+}
+
+.review::before {
+  top: -20px;
+  left: -15px;
+}
+
+.review::after {
+  bottom: -20px;
+  right: -15px;
+}
+
+.reviewer-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.reviewer-designation {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.review-pointer {
+  width: 40px;
+  max-height: 6px;
+}
+
+.review-heading {
+  text-align: center;
+  font-size: 42px;
+  margin-top: 24px;
+  letter-spacing: 4px;
+  font-family:'Averia Serif Libre';
+}
+
+.reviewBottomContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+}
+
 @media screen and (max-width: 1578px) {
   .whatWeDo-left img{
     scale: 0.8;
@@ -742,6 +827,13 @@ html {
 
   .hamburger-icon {
     display: block;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .reviewBottomContainer {
+    flex-direction: column;
+    gap: 12px;
   }
 }
 
@@ -790,6 +882,10 @@ html {
     align-items: center;
     justify-content: center;
     padding: 4px;
+  }
+
+  .testimonialsSectionContainer {
+    min-height: 1220px;
   }
 
   .visionContent {

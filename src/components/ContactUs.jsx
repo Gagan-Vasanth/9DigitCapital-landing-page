@@ -37,9 +37,9 @@ const ContactUs = () => {
                 <div className='headerImageFooter'><img src={BannerIcon} width={'200px'} height={'80px'} />
                     <p>Where Growth <span>Meets Trust</span></p></div>
                     <div className='mt-2'>
-                        <p className='company-text'>At 9Digit Capital, we are dedicated to helping our</p>
-                        <p className='company-text'>clients achieve their financial goals and lead a </p>
-                        <p className='company-text'>financially secure life.</p>
+                        <p className='company-text'>At 9Digit Capital, we are dedicated to helping our
+                        clients achieve their financial goals and lead a 
+                        financially secure life.</p>
                     </div>
                 </div>
                 <div className='helper-item'>
@@ -52,6 +52,8 @@ const ContactUs = () => {
                     <h2>Help and Support</h2>
                     <p onClick={() => navItemOnClickAction('disclosures')}>Disclosures</p>
                     <p onClick={handleWhatsAppClick}>Connect Over Whatsapp</p>
+                    <p>support@9digitcapital.com</p>
+                    <p style={{ color: '#09BE63', fontWeight: '700', fontSize: '20px'}}>ARN - 280833</p>
                 </div>
                 <div className='helper-item'>
                     <h2>Follow Us On</h2>

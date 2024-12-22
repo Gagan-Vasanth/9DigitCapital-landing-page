@@ -124,22 +124,6 @@ const RegisterModal = ({ setShowRegisterModal }) => {
                 <div style={{ fontWeight: '500', color: '#248232c7'}}>We Have successfully recieved your request</div>
                 <div className='corporate-office-info'>
                     <div>
-                        <div className='office-address'>
-                            <FaMap className='address-icon' /> {/* Address icon */}
-                            <span>
-                                <b>Our Corporate Office Address</b>
-                                <br />
-                                Devara Hosahalli, Rampura post
-                                <br />
-                                Kasaba Hobli, Channapatna - 562160
-                            </span>
-                        </div>
-                        <div className='office-timings'>
-                            <FaClock className='clock-icon' /> {/* Clock icon */}
-                            
-                            <span><b>Our Office Timings</b> <br></br>
-                            Mon - Sat : 9:30 AM - 6:00 PM</span>
-                        </div>
                         </div>
                         <button 
                             onClick={handleWhatsAppClick} 
@@ -160,7 +144,7 @@ const RegisterModal = ({ setShowRegisterModal }) => {
                             }}
                             >
                             <FaWhatsapp style={{ marginRight: "10px", width: '32px', height: '32px' }} />
-                            Connect Over WhatsApp
+                                Connect Over WhatsApp
                             </button>
                     </div>
             </div>}
