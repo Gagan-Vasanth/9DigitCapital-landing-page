@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Star from '../assets/star.png';
-import Gagan from '../assets/gagan_review.png';
-import Kashyap from '../assets/lashyap_review.png';
-import Akhil from '../assets/akhil_review.png';
+import Gagan from '../assets/gagan-t.png';
+import Kashyap from '../assets/khasyap-t.png';
+import Akhil from '../assets/ayush-t.png';
+import Random from '../assets/random.png';
 
 const ReviewCard = ({ id, name, designation, review }) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -13,6 +14,7 @@ const ReviewCard = ({ id, name, designation, review }) => {
         case 1: return Kashyap;
         case 2: return Akhil;
         case 3: return Gagan;
+        case 4: return Random;
     }
   }
 
