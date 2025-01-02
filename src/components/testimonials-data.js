@@ -23,6 +23,6 @@ export const data = [
     id: 4,
     name: "Shushant Kumar",
     designation: "Software Engineer",
-    review: `I've been investing with 9Digit Capital for the past 6 months and I'm happy with the results. Their personalized strategies and guidance have helped me start my portfolio. Moreover I appreciate their professionalism and dedication to helping me achieve my financial goals.`,
+    review: `I've been investing with 9 Digit Capital for the past 6 months and I'm happy with the results. Their personalized strategies and guidance have helped me start my portfolio. Moreover I appreciate their professionalism and dedication to helping me achieve my financial goals.`,
   },
 ];
