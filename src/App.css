@@ -844,17 +844,17 @@ html {
 @media screen and (max-width: 620px) {
   .home-header {
     text-align: center;
-    scale: 0.9;
-    margin-top: 64px;
+    scale: 0.8;
+    margin-top: 94px;
   }
 
   .home-header-green {
     text-align: center;
-    scale: 0.9;
+    scale: 0.8;
   }
 
   .home-description {
-    scale: 0.9;
+    scale: 0.8;
   }
 
   .processStep {
