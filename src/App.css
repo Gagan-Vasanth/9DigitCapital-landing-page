@@ -861,9 +861,17 @@ html {
     margin-bottom: 24px;
   }
 
+  .service-desc-heading {
+    max-width: 100%;
+  }
+
   .processStep {
     min-height: 100%;
     max-height: 100%;
+  }
+
+  .processStep h1 {
+    max-width: 70%;
   }
 
   .entireProcess {

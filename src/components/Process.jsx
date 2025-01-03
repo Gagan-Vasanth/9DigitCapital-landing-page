@@ -38,10 +38,10 @@ const ProcessStep = ({ cardDetails, index, children }) => {
         <div className='relative processStepContainer'>
             <div id={`step-${cardDetails.step}`}
                 className={`processStep`}>
-            <div className="flex flex-row items-center justify-between mt-1 mb-4">
-            <h1>{cardDetails.title}</h1>
-            {children}
-            </div>
+                <div className="flex flex-row items-center justify-between mt-1 mb-4">
+                    <h1>{cardDetails.title}</h1>
+                    {children}
+                </div>
             <div className="processStep-desc">{cardDetails.description}</div>
         </div>
         <div className={`processStep-number ${inView ? 'animate' : ''}`} style={{ animationDelay: `.${index+1}s`}}>{cardDetails.step}</div>
